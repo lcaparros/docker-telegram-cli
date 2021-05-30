@@ -20,6 +20,4 @@ unset SHELLINABOX_PASSWORD
 declare cmd="shellinaboxd --user shellinabox --group shellinabox --disable-ssl"
 
 echo "Starting: $cmd"
-#eval $cmd
-
-while true; do echo "Ctrl-C to stop"; done
+eval $cmd

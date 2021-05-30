@@ -27,7 +27,7 @@ $ docker pull lcaparros/telegram-cli:web
 $ docker run -d --name telegram-cli-web -p 4200:4200 -e SHELLINABOX_ALLOW_SUDO=1 -e SHELLINABOX_USER=user -e SHELLINABOX_PASSWORD=pass lcaparros/telegram-cli:web
 ```
 
-Then just connect from your favourite web browser to `localhost:4200`
+Then just connect from your favourite web browser to `localhost:4200` where you will find a login page. Once logged just type `tlg` command to use telegram-cli as you would do with the non-web version.
 
 The next environment variables can be provided in order to take a concrete action:
 
