@@ -1,0 +1,14 @@
+FROM lcaparros/telegram-cli
+
+RUN groupadd -r shellinabox && useradd -r -g shellinabox shellinabox
+
+RUN apt update && \
+DEBIAN_FRONTEND=noninteractive apt-get -y install shellinabox sudo
+
+EXPOSE 4200
+
+COPY entrypoint.sh /
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+
